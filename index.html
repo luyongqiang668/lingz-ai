@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="聆知AI - 专为销售设计的AI录音卡，让每一次沟通都成为知识资产">
+    <title>LINGZ 聆知AI | 你的随身AI谈判教练</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- 更新字体引用，优先使用苹果系统字体 -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PingFang+SC:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <div class="logo">
+                    <span class="logo-english" style="font-family: var(--font-sf-pro); font-weight: 800; font-size: 1.5rem; color: var(--brand-accent);">LINGZ</span>
+                    <span class="logo-chinese" style="font-family: var(--font-chinese); font-weight: 600; font-size: 1rem; color: var(--text-secondary); margin-left: 8px;">聆知AI</span>
+                </div>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link active">首页</a>
+                <a href="#product" class="nav-link">产品</a>
+                <a href="#features" class="nav-link">功能</a>
+                <a href="#brand" class="nav-link">品牌</a>
+                <a href="#contact" class="nav-link">联系我们</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">让每一次沟通，<br>都成为知识资产</h1>
+                <p class="hero-subtitle">
+                    聆知AI是中国首款面向销售场景的AI策略分析工具。<br>
+                    不只记录，更能复盘、建议、提升成交。
+                </p>
+                <div class="hero-cta">
+                    <a href="#product" class="btn btn-primary">了解产品</a>
+                    <a href="#contact" class="btn btn-secondary">预约演示</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="device-mockup">
+                    <div class="device-screen">
+                        <div class="screen-content">
+                            <div class="ai-analysis">
+                                <h3>AI分析结果</h3>
+                                <div class="analysis-item">
+                                    <div class="metric">
+                                        <span class="metric-value">87%</span>
+                                        <span class="metric-label">信任度建立</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-value">3</span>
+                                        <span class="metric-label">关键发现</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Section -->
+    <section id="product" class="product-section">
+        <div class="container">
+            <h2 class="section-title">LINGZ AI智能录音卡</h2>
+            <!-- 产品图片展示区域 -->
+            <div class="product-showcase">
+                <div class="product-image-gallery">
+                    <div class="gallery-main">
+                        <!-- 主图 -->
+                        <div class="image-placeholder" id="product-image-placeholder">
+                            <div class="icon">📱</div>
+<h3>AI智能录音卡 - 14张高清素材已准备就绪</h3>
+                            <p>LINGZ FW920 智能AI引擎录音笔完整视觉资料库<br>包含产品外观、功能界面、应用场景等</p>
+                        <p style="font-size: 0.85rem; color: var(--text-tertiary); margin-top: 8px;">
+                            ✅  详情_02.jpg ~ 详情_15.jpg<br>
+                            ✅  14张高清产品素材已上传
+                        </p>
+                        </div>
+                        <img src="images/详情_02.jpg" alt="LINGZ AI智能录音卡" class="product-image" id="product-real-image" onload="console.log('✅ 产品图片加载成功')" onerror="console.warn('❌ 产品图片加载失败'); document.getElementById('product-image-placeholder').style.display='block'; this.style.display='none';">
+                    </div>
+                    
+                    <!-- 缩略图区域 -->
+                    <div class="gallery-thumbnails">
+                        <div class="thumbnail-grid">
+                            <div class="thumbnail-item" data-src="images/详情_01.png">
+                                <span class="thumbnail-badge">01</span>
+                                <span class="thumbnail-label">产品套装</span>
+                            </div>
+                            <div class="thumbnail-item" data-src="images/详情_02.jpg">
+                                <span class="thumbnail-badge">02</span>
+                                <span class="thumbnail-label">产品正面</span>
+                            </div>
+                            <div class="thumbnail-item" data-src="images/详情_03.jpg">
+                                <span class="thumbnail-badge">03</span>
+                                <span class="thumbnail-label">产品功能</span>
+                            </div>
+                            <div class="thumbnail-item" data-src="images/详情_04.jpg">
+                                <span class="thumbnail-badge">04</span>
+                                <span class="thumbnail-label">场景应用</span>
+                            </div>
+                            <div class="thumbnail-item" data-src="images/详情_05.jpg">
+                                <span class="thumbnail-badge">05</span>
+                                <span class="thumbnail-label">AI转写</span>
+                            </div>
+                            <div class="thumbnail-item" data-src="images/详情_06.jpg">
+                                <span class="thumbnail-badge">06</span>
+                                <span class="thumbnail-label">思维导图</span>
+                            </div>
+                            <div class="thumbnail-item" data-src="images/详情_07.jpg">
+                                <span class="thumbnail-badge">07</span>
+                                <span class="thumbnail-label">会议记录</span>
+                            </div>
+                            <div class="thumbnail-item" data-src="images/详情_08.jpg">
+                                <span class="thumbnail-badge">08</span>
+                                <span class="thumbnail-label">产品参数</span>
+                            </div>
+                            <div class="thumbnail-item" data-src="images/详情_09.jpg">
+                                <span class="thumbnail-badge">09</span>
+                                <span class="thumbnail-label">应用界面</span>
+                            </div>
+                            <div class="thumbnail-item" data-src="images/详情_10.jpg">
+                                <span class="thumbnail-badge">10</span>
+                                <span class="thumbnail-label">商务场景</span>
+                            </div>
+                            <div class="thumbnail-item" data-src="images/详情_11.jpg">
+                                <span class="thumbnail-badge">11</span>
+                                <span class="thumbnail-label">学习场景</span>
+                            </div>
+                            <div class="thumbnail-item" data-src="images/详情_12.jpg">
+                                <span class="thumbnail-badge">12</span>
+                                <span class="thumbnail-label">电话采访</span>
+                            </div>
+                            <div class="thumbnail-item" data-src="images/详情_13.jpg">
+                                <span class="thumbnail-badge">13</span>
+                                <span class="thumbnail-label">技术架构</span>
+                            </div>
+                            <div class="thumbnail-item" data-src="images/详情_14.jpg">
+                                <span class="thumbnail-badge">14</span>
+                                <span class="thumbnail-label">完整套装</span>
+                            </div>
+                            <div class="thumbnail-item" data-src="images/详情_15.jpg">
+                                <span class="thumbnail-badge">15</span>
+                                <span class="thumbnail-label">多设备连接</span>
+                            </div>
+                            <style>
+.thumbnail-grid {
+                                display: grid;
+                                grid-template-columns: repeat(5, 1fr);
+                                gap: 8px;
+                                margin-top: 16px;
+                            }
+                            
+                            @media (max-width: 1024px) {
+                                .thumbnail-grid {
+                                    grid-template-columns: repeat(4, 1fr);
+                                }
+                            }
+                            
+                            @media (max-width: 768px) {
+                                .thumbnail-grid {
+                                    grid-template-columns: repeat(3, 1fr);
+                                }
+                            }
+                            
+                            @media (max-width: 480px) {
+                                .thumbnail-grid {
+                                    grid-template-columns: repeat(2, 1fr);
+                                }
+                            }
+                                
+                                .thumbnail-item {
+                                    position: relative;
+                                    background: rgba(0, 122, 255, 0.08);
+                                    border-radius: 8px;
+                                    padding: 8px;
+                                    text-align: center;
+                                    cursor: pointer;
+                                    transition: all 0.3s ease;
+                                    min-height: 80px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    justify-content: center;
+                                }
+                                
+                                .thumbnail-item:hover {
+                                    background: rgba(0, 122, 255, 0.15);
+                                    transform: translateY(-2px);
+                                }
+                                
+                                .thumbnail-badge {
+                                    background: var(--brand-accent);
+                                    color: white;
+                                    font-size: 0.7rem;
+                                    font-weight: bold;
+                                    padding: 2px 6px;
+                                    border-radius: 4px;
+                                    position: absolute;
+                                    top: -6px;
+                                    right: -6px;
+                                }
+                                
+.thumbnail-label {
+                                font-size: 0.75rem;
+                                color: var(--text-secondary);
+                                margin-top: 4px;
+                            }
+                            
+                            /* 隐藏缩略图区域 */
+                            .gallery-thumbnails {
+                                display: none;
+                            }
+                            </style>
+                        </div>
+                        <p style="font-size: 0.75rem; color: var(--text-tertiary); margin-top: 8px;">
+                            点击缩略图切换查看，共14张高清产品素材
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="product-features">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-microphone-alt"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>专业级6D双麦克风</h3>
+                            <p>6D立体麦克风阵列，360°全向高保真录音，AI智能降噪，确保95%以上语音识别准确率。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>AI实时语音转文字</h3>
+                            <p>支持118国语言实时转录，ChatGPT内容总结，语音转文字速度比打字快5倍。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>智能思维导图</h3>
+                            <p>录音内容自动生成思维导图，结构化呈现对话逻辑，帮助快速理解和复盘。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-battery-full"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>超长续航设计</h3>
+                            <p>400mAh大容量电池，36小时连续录音，磁吸式充电，Type-C快速充电支持。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h3>118国语言转录</h3>
+                    <p>全球领先的多语言识别技术，支持118种语言实时转文字，打破语言障碍。</p>
+                    <div class="product-tag">#AI语音识别</div>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>ChatGPT智能总结</h3>
+                    <p>自动提取关键信息，生成结构化会议纪要，效率提升500%。</p>
+                    <div class="product-tag">#AI内容总结</div>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">
+                        <i class="fas fa-sitemap"></i>
+                    </div>
+                    <h3>自动思维导图</h3>
+                    <p>录音内容自动生成结构化思维导图，帮助快速理清逻辑和重点。</p>
+                    <div class="product-tag">#知识管理</div>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>通话实时录音</h3>
+                    <p>支持通话录音转文字，会议记录、采访素材一键整理，省时省力。</p>
+                    <div class="product-tag">#高效工具</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Proposition -->
+    <section class="value-section">
+        <div class="container">
+            <div class="value-container">
+                <div class="value-content">
+                    <h2 class="section-title">从录音到成交的智能闭环</h2>
+                    <div class="value-steps">
+                        <div class="step">
+                            <div class="step-number">01</div>
+                            <div class="step-content">
+                                <h3>一键录音</h3>
+                                <p>随身携带，随时录音，不放过任何一个重要沟通</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">02</div>
+                            <div class="step-content">
+                                <h3>智能分析</h3>
+                                <p>AI深度分析对话，识别关键词、情绪、意图</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">03</div>
+                            <div class="step-content">
+                                <h3>策略建议</h3>
+                                <p>生成具体的行动建议和下次跟进策略</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">04</div>
+                            <div class="step-content">
+                                <h3>成交提升</h3>
+                                <p>持续优化，让每一单都越打越准</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="value-visual">
+                    <div class="value-image">
+                        <div class="data-visualization">
+                            <div class="data-wave"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <h2 class="section-title">核心功能</h2>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-header">
+                        <h3>客户画像分析</h3>
+                        <span class="feature-tag">销售神器</span>
+                    </div>
+                    <p>自动构建客户完整画像，分析决策风格、关注重点、潜在需求</p>
+                    <ul class="feature-list">
+                        <li>决策者识别</li>
+                        <li>风险点预警</li>
+                        <li>成交信号捕捉</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-header">
+                        <h3>表达优化建议</h3>
+                        <span class="feature-tag">能力提升</span>
+                    </div>
+                    <p>分析您的表达方式，提供优化建议，让沟通更有效</p>
+                    <ul class="feature-list">
+                        <li>话术复盘</li>
+                        <li>逻辑优化</li>
+                        <li>共情表达</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-header">
+                        <h3>谈判策略推荐</h3>
+                        <span class="feature-tag">实战工具</span>
+                    </div>
+                    <p>基于对话内容，为您推荐最适合的谈判策略和应对方案</p>
+                    <ul class="feature-list">
+                        <li>价格谈判策略</li>
+                        <li>异议处理方案</li>
+                        <li>促成成交技巧</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-header">
+                        <h3>知识沉淀系统</h3>
+                        <span class="feature-tag">终身价值</span>
+                    </div>
+                    <p>将您的每一次对话转化为结构化知识，沉淀为个人能力资产</p>
+                    <ul class="feature-list">
+                        <li>案例库管理</li>
+                        <li>经验萃取</li>
+                        <li>团队共享</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Scenarios -->
+    <section class="scenarios-section">
+        <div class="container">
+            <div class="scenarios-header">
+                <h2 class="section-title">应用场景</h2>
+                <p class="section-subtitle">根据14张高清素材内容，精准定位四大核心应用场景</p>
+            </div>
+            
+            <div class="scenarios-grid">
+                <div class="scenario-card">
+                    <div class="scenario-image">
+                        <div class="scenario-img-container">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                    </div>
+                    <div class="scenario-content">
+                        <h3>商务会议</h3>
+                        <p>重要会议完整记录，实时AI转文字，会后自动生成会议纪要，确保每一个行动项都被准确跟踪。</p>
+                        <div class="scenario-features">
+                            <span class="feature-tag">会议记录</span>
+                            <span class="feature-tag">AI纪要</span>
+                            <span class="feature-tag">行动项跟踪</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="scenario-card">
+                    <div class="scenario-image">
+                        <div class="scenario-img-container">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                    </div>
+                    <div class="scenario-content">
+                        <h3>学习培训</h3>
+                        <p>课堂、讲座、培训课程完整录音，AI自动总结重点，生成学习笔记和思维导图，学习效率提升300%。</p>
+                        <div class="scenario-features">
+                            <span class="feature-tag">课堂录音</span>
+                            <span class="feature-tag">知识总结</span>
+                            <span class="feature-tag">思维导图</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="scenario-card">
+                    <div class="scenario-image">
+                        <div class="scenario-img-container">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                    </div>
+                    <div class="scenario-content">
+                        <h3>电话采访</h3>
+                        <p>媒体采访、客户访谈、电话会议实时录音转文字，支持通话录音功能，确保每一段交流都被完整记录。</p>
+                        <div class="scenario-features">
+                            <span class="feature-tag">通话录音</span>
+                            <span class="feature-tag">采访记录</span>
+                            <span class="feature-tag">实时转写</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="scenario-card">
+                    <div class="scenario-image">
+                        <div class="scenario-img-container">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                    </div>
+                    <div class="scenario-content">
+                        <h3>灵感记录</h3>
+                        <p>随时捕捉灵感和创意，AI快速整理思路，将碎片化想法转化为结构化内容，激发无限创造力。</p>
+                        <div class="scenario-features">
+                            <span class="feature-tag">创意记录</span>
+                            <span class="feature-tag">思路整理</span>
+                            <span class="feature-tag">灵感捕捉</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <style>
+                .scenarios-section {
+                    background: var(--bg-secondary);
+                    padding: 80px 0;
+                }
+                
+                .scenarios-grid {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 32px;
+                    margin-top: 48px;
+                }
+                
+                .scenario-card {
+                    background: var(--bg-surface);
+                    border-radius: 20px;
+                    overflow: hidden;
+                    display: flex;
+                    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+                }
+                
+                .scenario-card:hover {
+                    transform: translateY(-8px);
+                    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.12);
+                }
+                
+                .scenario-image {
+                    flex: 0 0 120px;
+                    background: linear-gradient(135deg, rgba(0, 122, 255, 0.1) 0%, rgba(88, 86, 214, 0.1) 100%);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                
+                .scenario-img-container {
+                    width: 64px;
+                    height: 64px;
+                    border-radius: 50%;
+                    background: var(--brand-accent);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                
+                .scenario-img-container i {
+                    font-size: 28px;
+                    color: white;
+                }
+                
+                .scenario-content {
+                    flex: 1;
+                    padding: 32px;
+                }
+                
+                .scenario-content h3 {
+                    margin-top: 0;
+                    margin-bottom: 12px;
+                    font-size: 1.25rem;
+                    color: var(--text-primary);
+                }
+                
+                .scenario-content p {
+                    color: var(--text-secondary);
+                    font-size: 0.95rem;
+                    line-height: 1.6;
+                    margin-bottom: 20px;
+                }
+                
+                .scenario-features {
+                    display: flex;
+                    gap: 8px;
+                    flex-wrap: wrap;
+                }
+                
+                .feature-tag {
+                    background: rgba(0, 122, 255, 0.1);
+                    color: var(--brand-accent);
+                    font-size: 0.75rem;
+                    padding: 4px 10px;
+                    border-radius: 6px;
+                }
+                
+                @media (max-width: 1024px) {
+                    .scenarios-grid {
+                        grid-template-columns: 1fr;
+                    }
+                    
+                    .scenario-card {
+                        flex-direction: column;
+                    }
+                    
+                    .scenario-image {
+                        flex: none;
+                        height: 100px;
+                    }
+                    
+                    .scenario-content {
+                        padding: 24px;
+                    }
+                }
+            </style>
+        </div>
+    </section>
+
+    <!-- Brand Story -->
+    <section id="brand" class="brand-section">
+        <div class="container">
+            <div class="brand-content">
+                <h2 class="section-title">品牌故事</h2>
+                <blockquote class="brand-quote">
+                    "销售顾问每天都进行大量对话，但绝大多数信息随时间消散，错误无法复盘，成交机会悄然流失。<br>
+                    聆知AI存在的意义，是让人类的每一次对话都能转化为可沉淀、可行动的知识资产。"
+                </blockquote>
+                
+                <div class="brand-values">
+                    <div class="value-item">
+                        <h4><i class="fas fa-bullseye"></i> 结果导向</h4>
+                        <p>只关心用户能不能成交，不以功能酷炫为目标</p>
+                    </div>
+                    <div class="value-item">
+                        <h4><i class="fas fa-shield-alt"></i> 真实记录</h4>
+                        <p>不美化、不过度承诺，用真实案例说话</p>
+                    </div>
+                    <div class="value-item">
+                        <h4><i class="fas fa-chart-line"></i> 持续进化</h4>
+                        <p>对话永远在发生，知识永远在积累，系统不断学习</p>
+                    </div>
+                    <div class="value-item">
+                        <h4><i class="fas fa-hands-helping"></i> 用户赋能</h4>
+                        <p>不替代销售，而是让销售更有能力</p>
+                    </div>
+                </div>
+                
+                <!-- 应用场景图片展示 -->
+                <div class="application-showcase">
+                    <h3>实际应用场景</h3>
+                    <p>我们为您准备了以下应用场景展示区域，欢迎上传相关图片：</p>
+                    
+                    <div class="application-scenes">
+                        <div class="scene-card">
+                            <div class="scene-image-container">
+                                <div class="scene-placeholder">
+                                    <div class="scene-icon">🏢</div>
+                                    <h4>办公室场景</h4>
+                                    <p>客户面谈中的实际使用场景</p>
+                                </div>
+                                <img src="images/应用场景1.jpg" alt="办公室使用场景" class="scene-image" style="display: none;">
+                            </div>
+                            <div class="scene-description">
+                                <p><strong>场景一：客户办公室面谈</strong></p>
+                                <p>销售顾问在客户办公室中使用聆知AI进行重要商务对话录音，确保每个承诺和需求都被准确记录和分析。</p>
+                            </div>
+                        </div>
+                        
+                        <div class="scene-card">
+                            <div class="scene-image-container">
+                                <div class="scene-placeholder">
+                                    <div class="scene-icon">🚗</div>
+                                    <h4>移动场景</h4>
+                                    <p>外出拜访、展会等移动场景</p>
+                                </div>
+                                <img src="images/应用场景2.jpg" alt="移动使用场景" class="scene-image" style="display: none;">
+                            </div>
+                            <div class="scene-description">
+                                <p><strong>场景二：移动拜访场景</strong></p>
+                                <p>在汽车销售试驾、房产带看等移动场景中，捕捉关键对话点，即时生成分析报告，提升跟进效率。</p>
+                            </div>
+                        </div>
+                        
+                        <div class="scene-card">
+                            <div class="scene-image-container">
+                                <div class="scene-placeholder">
+                                    <div class="scene-icon">🎯</div>
+                                    <h4>团队复盘</h4>
+                                    <p>团队会议和案例复盘场景</p>
+                                </div>
+                                <img src="images/应用场景3.jpg" alt="团队复盘场景" class="scene-image" style="display: none;">
+                            </div>
+                            <div class="scene-description">
+                                <p><strong>场景三：团队复盘会议</strong></p>
+                                <p>销售团队使用聆知AI录制和分析成功案例，构建团队共享知识库，提升整体销售能力。</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>准备好让您的销售能力<br>插上AI的翅膀了吗？</h2>
+                <p>立即预约演示，体验聆知AI如何帮助您提升成交率</p>
+                <div id="contact" class="contact-form">
+                    <form id="demoForm">
+                        <div class="form-grid">
+                            <div class="form-item">
+                                <label for="nameInput">您的姓名</label>
+                                <input type="text" id="nameInput" placeholder="请填写您的真实姓名" required>
+                            </div>
+                            <div class="form-item">
+                                <label for="phoneInput">联系电话</label>
+                                <input type="tel" id="phoneInput" placeholder="请填写您的手机号码" required>
+                            </div>
+                            <div class="form-item">
+                                <label for="emailInput">电子邮箱</label>
+                                <input type="email" id="emailInput" placeholder="请填写您的邮箱地址" required>
+                            </div>
+                        </div>
+                        <div class="form-item full-width">
+                            <label for="industrySelect">您所在的行业</label>
+                            <select id="industrySelect" required>
+                                <option value="" disabled selected>请选择您所在的行业</option>
+                                <option value="insurance">保险</option>
+                                <option value="realestate">房地产</option>
+                                <option value="automotive">汽车销售</option>
+                                <option value="medical">医美</option>
+                                <option value="other">其他</option>
+                            </select>
+                        </div>
+                        <div class="form-item full-width">
+                            <label for="messageInput">您想了解的方面（可选）</label>
+                            <textarea id="messageInput" placeholder="请简要描述您想了解的产品功能或应用场景..." rows="3"></textarea>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-calendar-alt"></i> 预约演示
+                            </button>
+                            <p class="form-note">
+                                <i class="fas fa-shield-alt"></i> 我们承诺保护您的隐私，仅用于演示安排
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-english" style="font-family: var(--font-sf-pro); font-weight: 800; font-size: 1.5rem; color: rgba(255, 255, 255, 0.95);">LINGZ</span>
+                        <span class="logo-chinese" style="font-family: var(--font-chinese); font-weight: 600; font-size: 1rem; color: rgba(255, 255, 255, 0.7); margin-left: 8px;">聆知AI</span>
+                    </div>
+                    <p class="footer-slogan">让每一次沟通，成为知识资产</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>产品</h4>
+                        <a href="#product">AI录音卡</a>
+                        <a href="#features">核心功能</a>
+                        <a href="#brand">品牌故事</a>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>支持</h4>
+                        <a href="#">使用指南</a>
+                        <a href="#">常见问题</a>
+                        <a href="#">售后服务</a>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>联系</h4>
+                        <a href="mailto:jgslwf@163.com">jgslwf@163.com</a>
+                        <a href="tel:13650849098">13650849098</a>
+                        <div class="social-links">
+                            <a href="#" aria-label="WeChat"><i class="fab fa-weixin"></i></a>
+                            <a href="#" aria-label="Weibo"><i class="fab fa-weibo"></i></a>
+                            <a href="#" aria-label="Zhihu"><i class="fab fa-zhihu"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 LINGZ 聆知AI. 版权所有</p>
+                <div class="footer-legal">
+                    <a href="#">隐私政策</a>
+                    <a href="#">使用条款</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    
+    <style>
+        /* 产品图片样式优化 */
+        .product-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+            animation: fadeIn 0.6s ease-out;
+        }
+        
+        #product-image-placeholder {
+            display: none; /* 默认隐藏，仅图片加载失败时显示 */
+            background: linear-gradient(135deg, rgba(0, 122, 255, 0.08) 0%, rgba(88, 86, 214, 0.08) 100%);
+            border-radius: 12px;
+            padding: 40px 30px;
+            text-align: center;
+            border: 2px dashed rgba(0, 122, 255, 0.15);
+            max-width: 100%;
+        }
+        
+        #product-image-placeholder .icon {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            color: rgba(0, 122, 255, 0.3);
+        }
+        
+        .placeholder-pulse {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { border-color: rgba(0, 122, 255, 0.1); }
+            50% { border-color: rgba(0, 122, 255, 0.3); }
+            100% { border-color: rgba(0, 122, 255, 0.1); }
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        
+        .image-hint {
+            margin-top: 16px;
+            padding: 12px;
+            background: rgba(255, 59, 48, 0.1);
+            border-radius: 8px;
+            border: 1px dashed #FF3B30;
+            font-size: 0.85rem;
+            color: #FF3B30;
+            line-height: 1.4;
+        }
+        
+        .gallery-main {
+            position: relative;
+            min-height: 400px;
+        }
+        
+        /* 确保在移动设备上图片显示正常 */
+        @media (max-width: 768px) {
+            .gallery-main {
+                min-height: 300px;
+            }
+            
+            .product-image {
+                border-radius: 8px;
+            }
+        }
+    </style>
+</body>
+</html>

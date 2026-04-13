@@ -1,0 +1,667 @@
+/* LINGZ 聆知AI - 品牌视觉主题系统 */
+/* 严格遵循品牌规划文档的色彩规范 */
+
+/* ===== 品牌基础色 - Apple美学优化版 ===== */
+:root {
+  /* 苹果风格色彩系统 */
+  /* 主色调：白/浅灰背景为主，黑/深灰文字 */
+  --bg-primary: #FFFFFF;          /* 主背景色：纯白 */
+  --bg-secondary: #F8F8F9;        /* 次要背景：极浅灰 */
+  --bg-tertiary: #F2F2F7;         /* 三级背景：浅灰 */
+  --bg-surface: #FFFFFF;          /* 表面背景：纯白（卡片、模块） */
+  --bg-elevated: #FFFFFF;         /* 高架背景：带轻微阴影的白色 */
+  
+  /* 文字颜色（Apple SF系统风格） */
+  --text-primary: #1D1D1F;        /* 主文字：深灰（非纯黑） */
+  --text-secondary: #424245;      /* 次要文字：中灰 */
+  --text-tertiary: #86868B;       /* 三级文字：浅灰 */
+  --text-placeholder: #8E8E93;    /* 占位符文字 */
+  --text-inverse: #FFFFFF;        /* 反白文字 */
+  
+  /* 边框和分割线 */
+  --border-light: #E5E5EA;        /* 轻边框 */
+  --border-medium: #D1D1D6;       /* 中边框 */
+  --border-heavy: #C7C7CC;        /* 重边框 */
+  --separator: #E5E5EA;           /* 分割线 */
+  
+  /* 品牌标识色（保持品牌规划的原色，但调整使用方式） */
+  --brand-primary: #000000;       /* 品牌主色：纯黑（用于Logo和关键元素） */
+  --brand-secondary: #B0B3B8;     /* 品牌辅色：聆知银灰（硬件色） */
+  --brand-accent: #007AFF;        /* 品牌点缀色：苹果蓝（Apple Blue）用于可操作元素 */
+  
+  /* 产品硬件色（与品牌规划保持一致） */
+  --hardware-dark:  #8A8D91;      /* 深银 */
+  --hardware-mid:   #B0B3B8;      /* 聆知银灰（产品主体） */
+  --hardware-light: #D8DADD;      /* 浅银 */
+  
+  /* 功能色（克制使用）*/
+  --success: #34C759;              /* 成功/正向，仅数据展示用 */
+  --warning: #FF9F0A;             /* 提醒，仅系统提示用 */
+  --error: #FF3B30;               /* 错误，仅错误状态用 */
+  --info: #5AC8FA;                /* 信息（苹果系统蓝）*/
+  
+  /* 渐变系统（苹果风格） */
+  --gradient-light: linear-gradient(135deg, #FFFFFF 0%, #F8F8F9 100%);
+  --gradient-subtle: linear-gradient(135deg, #F2F2F7 0%, #FFFFFF 100%);
+  --gradient-accent: linear-gradient(135deg, #007AFF 0%, #5856D6 100%);
+  
+  /* 苹果系统颜色参考 */
+  --apple-blue: #007AFF;          /* 苹果系统蓝 */
+  --apple-gray: #8E8E93;          /* 苹果系统灰 */
+  --apple-green: #34C759;         /* 苹果系统绿 */
+  --apple-indigo: #5856D6;        /* 苹果靛蓝 */
+  --apple-orange: #FF9500;        /* 苹果橙 */
+  --apple-purple: #AF52DE;        /* 苹果紫 */
+  --apple-red: #FF3B30;           /* 苹果红 */
+  --apple-teal: #5AC8FA;          /* 苹果青色 */
+  --apple-yellow: #FFCC00;        /* 苹果黄 */
+  
+  /* 功能色（克制使用）*/
+  --lingz-success: #34C759;   /* 成交/正向，仅数据展示用 */
+  --lingz-warning: #FF9F0A;   /* 提醒，仅系统提示用 */
+  --lingz-error:   #FF3B30;   /* 错误，仅错误状态用 */
+  
+  /* 字体系统（遵循苹果设计） */
+  --font-sf-pro: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro Display', sans-serif;
+  --font-chinese: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  --font-english: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-monospace: 'SF Mono', 'Menlo', 'Monaco', 'Consolas', monospace;
+  
+  /* 间距系统 */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+  --spacing-xxl: 5rem;
+  
+  /* 边框半径 */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-round: 50%;
+  
+  /* 阴影 */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.16);
+  --shadow-inner: inset 0 2px 4px rgba(0, 0, 0, 0.06);
+  
+  /* 过渡动画 */
+  --transition-fast: 150ms ease;
+  --transition-normal: 250ms ease;
+  --transition-slow: 350ms ease;
+}
+
+/* ===== 品牌专用样式类 ===== */
+
+/* Logo 样式 */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-english);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.logo-english {
+  font-size: 1.5rem;
+  color: var(--lingz-black);
+  font-weight: 800;
+}
+
+.logo-chinese {
+  font-size: 1rem;
+  color: var(--lingz-gray-700);
+  font-family: var(--font-chinese);
+  font-weight: 600;
+}
+
+.logo-white .logo-english {
+  color: var(--lingz-white);
+}
+
+.logo-white .logo-chinese {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.logo-silver .logo-english {
+  color: var(--lingz-silver-mid);
+}
+
+/* 按钮样式 - 苹果美学 */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 32px;
+  border-radius: 10px; /* 苹果风格的圆角 */
+  font-family: var(--font-sf-pro);
+  font-weight: 600;
+  font-size: 17px; /* 苹果系统标准字体大小 */
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  position: relative;
+  overflow: hidden;
+  letter-spacing: -0.02em; /* 苹果字体特性 */
+}
+
+/* 按压动画（苹果触觉反馈模拟） */
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btn-primary {
+  background: var(--brand-accent);
+  color: var(--text-inverse);
+  border: none;
+}
+
+.btn-primary:hover {
+  background: #0056CC; /* 品牌色的深色变体 */
+  box-shadow: 0 4px 14px rgba(0, 122, 255, 0.25);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--brand-primary);
+  border: 1px solid var(--border-medium);
+}
+
+.btn-secondary:hover {
+  background: var(--bg-tertiary);
+  border-color: var(--brand-primary);
+}
+
+/* 轮廓按钮 */
+.btn-outline {
+  background: transparent;
+  color: var(--brand-accent);
+  border: 1px solid var(--brand-accent);
+}
+
+.btn-outline:hover {
+  background: rgba(0, 122, 255, 0.08);
+}
+
+/* 文本按钮 */
+.btn-text {
+  background: transparent;
+  color: var(--brand-accent);
+  padding: 8px 16px;
+  border: none;
+  font-weight: 500;
+}
+
+.btn-text:hover {
+  color: #0056CC;
+  background: rgba(0, 122, 255, 0.08);
+  border-radius: 6px;
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--lingz-white);
+  border: 2px solid var(--lingz-white);
+}
+
+.btn-outline:hover {
+  background: var(--lingz-white);
+  color: var(--lingz-black);
+}
+
+.btn-text {
+  background: transparent;
+  color: var(--lingz-black);
+  padding: 8px 16px;
+  border: none;
+}
+
+.btn-text:hover {
+  color: var(--lingz-gray-700);
+}
+
+/* 卡片样式 - 苹果美学 */
+.card {
+  background: var(--bg-surface);
+  border: none;
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  transition: all var(--transition-normal);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  backdrop-filter: blur(10px);
+}
+
+.card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+/* 高架卡片（用于重要内容） */
+.card-elevated {
+  background: var(--bg-elevated);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-elevated:hover {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.16);
+}
+
+/* 紧凑卡片 */
+.card-compact {
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+}
+
+/* 强调卡片 */
+.card-accent {
+  background: linear-gradient(135deg, rgba(0, 122, 255, 0.08) 0%, rgba(88, 86, 214, 0.08) 100%);
+  border: 1px solid rgba(0, 122, 255, 0.15);
+}
+
+/* 深色模式卡片 */
+.card-dark {
+  background: rgba(30, 30, 32, 0.8);
+  border: 1px solid rgba(60, 60, 65, 0.6);
+  color: var(--text-inverse);
+}
+
+.card-dark:hover {
+  border-color: rgba(0, 122, 255, 0.4);
+}
+
+/* 标签样式 */
+.tag {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.tag-primary {
+  background: var(--lingz-black);
+  color: var(--lingz-white);
+}
+
+.tag-secondary {
+  background: var(--lingz-gray-100);
+  color: var(--lingz-gray-700);
+}
+
+.tag-success {
+  background: rgba(52, 199, 89, 0.1);
+  color: var(--lingz-success);
+  border: 1px solid rgba(52, 199, 89, 0.2);
+}
+
+.tag-warning {
+  background: rgba(255, 159, 10, 0.1);
+  color: var(--lingz-warning);
+  border: 1px solid rgba(255, 159, 10, 0.2);
+}
+
+/* 徽章样式 */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: var(--radius-round);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.badge-primary {
+  background: var(--lingz-black);
+  color: var(--lingz-white);
+}
+
+.badge-secondary {
+  background: var(--lingz-gray-300);
+  color: var(--lingz-gray-900);
+}
+
+/* 数据可视化颜色 */
+.data-positive {
+  color: var(--lingz-success);
+  fill: var(--lingz-success);
+}
+
+.data-neutral {
+  color: var(--lingz-silver-mid);
+  fill: var(--lingz-silver-mid);
+}
+
+.data-negative {
+  color: var(--lingz-error);
+  fill: var(--lingz-error);
+}
+
+.data-warning {
+  color: var(--lingz-warning);
+  fill: var(--lingz-warning);
+}
+
+/* 进度条 */
+.progress {
+  height: 8px;
+  background: var(--lingz-gray-100);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background: var(--lingz-black);
+  border-radius: 4px;
+  transition: width 600ms ease;
+}
+
+.progress-bar-success {
+  background: var(--lingz-success);
+}
+
+.progress-bar-warning {
+  background: var(--lingz-warning);
+}
+
+/* 表格样式 */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th {
+  background: var(--lingz-gray-050);
+  color: var(--lingz-gray-700);
+  font-weight: 600;
+  text-align: left;
+  padding: 12px;
+  border-bottom: 1px solid var(--lingz-gray-150);
+}
+
+.table td {
+  padding: 12px;
+  border-bottom: 1px solid var(--lingz-gray-100);
+}
+
+.table tr:hover {
+  background: var(--lingz-gray-050);
+}
+
+/* 表单元素 - 苹果美学 */
+.input,
+.select,
+.textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid var(--border-medium);
+  border-radius: 12px; /* 苹果风格的圆角 */
+  font-family: var(--font-sf-pro);
+  font-size: 17px; /* 苹果系统标准 */
+  background: rgba(245, 245, 245, 0.8);
+  color: var(--text-primary);
+  transition: all var(--transition-fast);
+  appearance: none; /* 移除默认样式 */
+}
+
+.input:focus,
+.select:focus,
+.textarea:focus {
+  outline: none;
+  border-color: var(--brand-accent);
+  background: var(--bg-primary);
+  box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.1);
+}
+
+/* 文本框 */
+.textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* 下拉菜单 */
+.select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M5 7.5L10 12.5L15 7.5' stroke='%238E8E93' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  background-size: 20px;
+  padding-right: 48px;
+}
+
+/* 复选框和单选框 */
+.checkbox,
+.radio {
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  border: 2px solid var(--border-medium);
+  position: relative;
+  cursor: pointer;
+  appearance: none;
+}
+
+.checkbox:checked,
+.radio:checked {
+  background: var(--brand-accent);
+  border-color: var(--brand-accent);
+}
+
+.checkbox:checked::after {
+  content: '✓';
+  position: absolute;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* 开关 */
+.switch {
+  width: 52px;
+  height: 32px;
+  border-radius: 16px;
+  background: var(--border-medium);
+  position: relative;
+  cursor: pointer;
+  appearance: none;
+  transition: background var(--transition-normal);
+}
+
+.switch:checked {
+  background: var(--brand-accent);
+}
+
+.switch::after {
+  content: '';
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  border-radius: 14px;
+  background: white;
+  top: 2px;
+  left: 2px;
+  transition: transform var(--transition-normal);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.switch:checked::after {
+  transform: translateX(20px);
+}
+
+.input::placeholder,
+.textarea::placeholder {
+  color: var(--lingz-gray-500);
+}
+
+.input-error {
+  border-color: var(--lingz-error);
+}
+
+.input-error:focus {
+  border-color: var(--lingz-error);
+  box-shadow: 0 0 0 3px rgba(255, 59, 48, 0.1);
+}
+
+/* 警告框 */
+.alert {
+  padding: 16px;
+  border-radius: var(--radius-md);
+  border-left: 4px solid;
+  margin: var(--spacing-md) 0;
+}
+
+.alert-info {
+  background: rgba(0, 0, 0, 0.02);
+  border-left-color: var(--lingz-gray-300);
+  color: var(--lingz-gray-900);
+}
+
+.alert-success {
+  background: rgba(52, 199, 89, 0.05);
+  border-left-color: var(--lingz-success);
+  color: var(--lingz-gray-900);
+}
+
+.alert-warning {
+  background: rgba(255, 159, 10, 0.05);
+  border-left-color: var(--lingz-warning);
+  color: var(--lingz-gray-900);
+}
+
+.alert-error {
+  background: rgba(255, 59, 48, 0.05);
+  border-left-color: var(--lingz-error);
+  color: var(--lingz-gray-900);
+}
+
+/* 工具提示 */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--lingz-gray-900);
+  color: var(--lingz-white);
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 0.875rem;
+  white-space: nowrap;
+  margin-bottom: 8px;
+}
+
+.tooltip:hover::before {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 6px solid transparent;
+  border-top-color: var(--lingz-gray-900);
+  margin-bottom: -4px;
+}
+
+/* 加载动画 */
+.loading {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border: 3px solid var(--lingz-gray-150);
+  border-top-color: var(--lingz-black);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* 品牌特定动画 */
+@keyframes wave {
+  0% {
+    transform: translateX(-100%) scaleY(1);
+  }
+  50% {
+    transform: translateX(0) scaleY(1.2);
+  }
+  100% {
+    transform: translateX(100%) scaleY(1);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+/* 品牌网格背景 */
+.brand-grid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    linear-gradient(var(--lingz-gray-150) 1px, transparent 1px),
+    linear-gradient(90deg, var(--lingz-gray-150) 1px, transparent 1px);
+  background-size: 40px 40px;
+  opacity: 0.05;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* 声波动画 */
+.sound-wave {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  gap: 4px;
+}
+
+.wave-bar {
+  width: 4px;
+  background: var(--lingz-black);
+  border-radius: 2px;
+  animation: wave 1.4s infinite;
+}
+
+.wave-bar:nth-child(1) { animation-delay: 0s; height: 20%; }
+.wave-bar:nth-child(2) { animation-delay: 0.1s; height: 40%; }
+.wave-bar:nth-child(3) { animation-delay: 0.2s; height: 60%; }
+.wave-bar:nth-child(4) { animation-delay: 0.3s; height: 80%; }
+.wave-bar:nth-child(5) { animation-delay: 0.4s; height: 100%; }
+.wave-bar:nth-child(6) { animation-delay: 0.5s; height: 80%; }
+.wave-bar:nth-child(7) { animation-delay: 0.6s; height: 60%; }
+.wave-bar:nth-child(8) { animation-delay: 0.7s; height: 40%; }
+.wave-bar:nth-child(9) { animation-delay: 0.8s; height: 20%; }
