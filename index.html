@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LINGZ 聆知 AI｜随身 AI 沟通记录器</title>
-  <meta name="description" content="LINGZ 聆知 AI，随身 AI 沟通记录器，把真实沟通转成文字、摘要、待办和复盘建议。" />
+  <title>LINGZ 聆知 AI｜随身 AI 沟通复盘入口</title>
+  <meta name="description" content="LINGZ 聆知 AI，把真实沟通留下来，并在沟通结束后生成文字、摘要、待办与复盘建议。" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -12,125 +12,106 @@
     <a class="brand" href="#hero">LINGZ</a>
     <button class="nav-toggle" aria-label="打开菜单">☰</button>
     <nav class="nav-menu">
-      <a class="nav-link active" href="#product">产品</a>
-      <a class="nav-link" href="#problem">用户问题</a>
-      <a class="nav-link" href="#features">功能</a>
-      <a class="nav-link" href="#workflow">怎么用</a>
+      <a class="nav-link active" href="#why">为什么</a>
+      <a class="nav-link" href="#product">产品拆解</a>
+      <a class="nav-link" href="#review">沟通复盘</a>
+      <a class="nav-link" href="#scenes">适用场景</a>
       <a class="nav-link" href="#contact">预约体验</a>
     </nav>
   </header>
 
   <main>
     <section id="hero" class="hero">
-      <div class="hero-text">
+      <div class="hero-copy-block">
         <p class="eyebrow">LINGZ 聆知 AI</p>
-        <h1>随身 AI 沟通记录器。</h1>
-        <p class="hero-copy">把会议、拜访、咨询和电话沟通，转成可阅读的文字、可交付的摘要、可执行的下一步。</p>
-        <div class="hero-actions">
-          <a class="button primary" href="#contact">预约体验</a>
-          <a class="button ghost" href="#features">查看功能</a>
-        </div>
+        <h1>一次沟通结束后，你不用再靠记忆工作。</h1>
+        <p class="hero-copy">LINGZ 把会议、拜访、咨询和电话里的真实信息留下来，在结束后整理成文字、摘要、待办和复盘建议。</p>
       </div>
-      <figure class="hero-media">
-        <img src="https://raw.githubusercontent.com/luyongqiang668/lingz-ai/main/images/product-front.jpg" alt="LINGZ AI 产品正面图" />
+      <figure class="hero-product">
+        <img id="productHeroImage" src="data:image/jpeg;base64,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" alt="LINGZ 聆知 AI 产品图" />
       </figure>
     </section>
 
-    <section id="product" class="section product-intro">
+    <section id="why" class="section opening-section">
+      <div class="section-inner narrow">
+        <p class="section-kicker">Why It Exists</p>
+        <h2>沟通里真正消耗人的，不是说话本身，而是事后的不确定。</h2>
+        <p class="lead">客户到底在犹豫什么，团队是否达成共识，下一步谁来推进，哪些话当时听见了却没有被回应。很多沟通没有失败在现场，而是失败在离开现场之后。</p>
+      </div>
+    </section>
+
+    <section id="product" class="section product-section">
       <div class="section-inner product-layout">
-        <figure class="product-photo">
-          <img src="https://raw.githubusercontent.com/luyongqiang668/lingz-ai/main/images/product-front.jpg" alt="LINGZ AI 便携设备展示" />
-        </figure>
-        <div class="section-copy">
+        <div class="product-text">
           <p class="section-kicker">Product</p>
-          <h2>它先是一台好用的记录设备，然后才是 AI。</h2>
-          <p class="lead">用户不需要学习复杂系统，也不需要在沟通中分心操作。打开记录、结束沟通、查看结果，这是第一层常识。</p>
-          <p class="body-copy">真正的价值发生在对话之后：谁提出了顾虑，哪些问题没有回应，下一次应该补什么、问什么、推进到哪里。</p>
+          <h2>用户看到的不是一台录音设备，而是一套沟通复盘入口。</h2>
+          <p class="body-copy">录音只是第一步。LINGZ 更重要的是把一次沟通转成可以继续使用的信息，让用户不用在“我记得好像是这样”和“到底该怎么推进”之间反复消耗。</p>
         </div>
-      </div>
-    </section>
-
-    <section id="problem" class="section problem-section">
-      <div class="section-inner">
-        <p class="section-kicker">Problem</p>
-        <h2>高沟通人群缺的不是录音，而是沟通后的清楚。</h2>
-        <div class="problem-grid">
+        <div class="decompose-list">
           <article>
             <span>01</span>
-            <h3>会后只剩印象</h3>
-            <p>很多重点在当时听懂了，但过几个小时就变成模糊记忆。</p>
+            <h3>听见现场</h3>
+            <p>随身携带，快速开始记录，适合会议、拜访、咨询、培训等真实沟通现场。</p>
           </article>
           <article>
             <span>02</span>
-            <h3>客户顾虑被漏掉</h3>
-            <p>真正影响成交和信任的，常常不是最后一句话，而是中途被轻轻带过的问题。</p>
+            <h3>留下原话</h3>
+            <p>语音转成文字，让信息可以被搜索、复制、归档，而不是停留在模糊印象里。</p>
           </article>
           <article>
             <span>03</span>
-            <h3>复盘很难坚持</h3>
-            <p>手动整理太慢，团队复盘太重，最后经验很难沉淀下来。</p>
+            <h3>整理结果</h3>
+            <p>通过 AI 大模型生成摘要、纪要和待办，不绑定单一模型，适配国内版与国际版。</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>回到判断</h3>
+            <p>围绕顾虑、共识、风险和下一步，帮助用户看清下一次沟通应该补什么。</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="features" class="section feature-section">
+    <section id="review" class="section review-section">
+      <div class="section-inner review-layout">
+        <div>
+          <p class="section-kicker">Review</p>
+          <h2>好的 AI，不是替你说话，而是让你更清楚地回到现场。</h2>
+        </div>
+        <div class="review-lines">
+          <p>它保留对话的细节，也保留人的判断。</p>
+          <p>它提醒被忽略的顾虑，也不把复杂关系压成一个结论。</p>
+          <p>它把下一步照亮一点，让用户下一次开口更有把握。</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="scenes" class="section scene-section">
       <div class="section-inner">
-        <div class="section-heading">
-          <p class="section-kicker">Features</p>
-          <h2>从记录到复盘，压缩成一个自然流程。</h2>
-        </div>
-        <div class="feature-grid">
+        <p class="section-kicker">Scenes</p>
+        <h2>越依赖高质量沟通的人，越需要把沟通过程变成资产。</h2>
+        <div class="scene-grid">
           <article>
-            <b>6D 双麦克风</b>
-            <p>适合会议、拜访、咨询、培训等面对面沟通，尽量保留完整上下文。</p>
+            <h3>销售与客户成功</h3>
+            <p>沉淀客户顾虑、推进节点和承诺事项，让下一次跟进不靠感觉。</p>
           </article>
           <article>
-            <b>实时语音转文字</b>
-            <p>支持多语言转录，把声音变成可搜索、可复制、可整理的文本。</p>
+            <h3>管理者与团队</h3>
+            <p>把会议共识和责任边界整理清楚，减少会后反复确认。</p>
           </article>
           <article>
-            <b>AI 大模型总结</b>
-            <p>根据国际版与国内版场景接入不同 AI 大模型，生成摘要、纪要和待办。</p>
-          </article>
-          <article>
-            <b>沟通复盘建议</b>
-            <p>围绕顾虑、共识、推进节奏和下一步行动，帮助用户快速回到重点。</p>
+            <h3>顾问、咨询与培训</h3>
+            <p>保留真实表达，整理问题脉络，让服务交付更稳定。</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="workflow" class="section workflow-section">
-      <div class="section-inner">
-        <p class="section-kicker">Workflow</p>
-        <h2>用户只做三件事。</h2>
-        <div class="steps">
-          <div>
-            <span>01</span>
-            <h3>记录一次真实沟通</h3>
-          </div>
-          <div>
-            <span>02</span>
-            <h3>获得文字、摘要和重点</h3>
-          </div>
-          <div>
-            <span>03</span>
-            <h3>带着下一步建议继续推进</h3>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section philosophy-section">
-      <div class="section-inner split">
-        <h2>好的智能，应该让人更清醒。</h2>
-        <div class="plain-lines">
-          <p>不替人开口。</p>
-          <p>不替人负责。</p>
-          <p>不把复杂关系压成一个结论。</p>
-          <p>只把下一次可以更好的地方，照亮一点。</p>
-        </div>
+    <section class="section brand-section">
+      <div class="section-inner narrow">
+        <p class="section-kicker">Brand Signal</p>
+        <h2>在大量声音里，找到真正重要的信号。</h2>
+        <p class="lead">LINGZ 的气质不是炫技，而是靠近、聆听、分辨。它不抢走沟通的主体，只在沟通之后，把那些值得被看见的内容安静地带回来。</p>
       </div>
     </section>
 
@@ -147,11 +128,10 @@
           <input id="emailInput" type="email" placeholder="邮箱" />
           <select id="industrySelect">
             <option value="">选择场景</option>
-            <option>商务沟通</option>
-            <option>客户沟通</option>
-            <option>团队管理</option>
+            <option>销售与客户沟通</option>
+            <option>管理会议</option>
             <option>咨询服务</option>
-            <option>学习复盘</option>
+            <option>培训与学习复盘</option>
             <option>其他高沟通场景</option>
           </select>
           <button type="submit">提交预约</button>
